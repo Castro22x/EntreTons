@@ -101,6 +101,21 @@ header img {
     background-position: center;
 }
 
+
+/* ------------------Banner2----------------------- */
+
+.Banner2 {
+    height: 400px;
+    margin-top: 150px;
+    margin-bottom: 400px;
+    background-size: 100%;
+}
+
+.Banner2 img {
+    height: 600px;
+    width: 100%;
+}
+
 /* ------------------Sobre------------------------- */
 
 #sobre {
@@ -146,20 +161,22 @@ body {
     margin: 0;
     font-family: "Opens-Sans", Opens-Sans;
     background-color: #f5f5f5;
-    
+
 }
 
 .container {
     padding: 0px;
     text-align: center;
-    
+
 }
 
 .title {
     font-size: 3em;
     padding: 10px 20px;
-    
+    color: var(--EnviarBotao);
+
 }
+
 
 .cards {
     display: flex;
@@ -167,18 +184,19 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 70px;
-    
+
 }
 
 .card:hover {
     transform: scale(1.2);
-    
+    transition: .5s;
+
 }
 
 .card img {
     width: 100%;
     height: 500px;
-    
+
 }
 
 .card-content {
@@ -191,19 +209,19 @@ body {
     margin: 0;
     font-family: "Opens-Sans", Opens-Sans;
     background-color: #f5f5f5;
-    
+
 }
 
 .container {
     padding: 0px;
     text-align: center;
-    
+
 }
 
 .title {
     font-size: 3em;
     padding: 10px 20px;
-    
+
 }
 
 .cards1 {
@@ -212,23 +230,146 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 70px;
-    
+
 }
 
 .card2:hover {
     transform: scale(1.2);
-    
+    transition: .5s;
+
 }
 
 .card2 img {
     width: 100%;
     height: 500px;
-    
+
 }
 
 .card2-content {
     padding: 15px;
-    
+
+}
+
+
+/* ----------------------Cards3------------------------ */
+
+body {
+    background: #e5e5e5;
+    font-family: "Opens-Sans", Opens-Sans;
+    margin: 0;
+    padding: 0;
+}
+
+.title2 {
+    color: #640000;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 3em;
+    padding: 20px 20px;
+    font-weight: 500;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.card3 {
+    font-size: 30px;
+    background: #7a0c0c;
+    padding: 50px;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+    margin-bottom: 120px;
+
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.card3 img {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.saiba-mais {
+    background: #e6e6e6;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+.saiba-mais:hover {
+    background: #c00000;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ----------------------Cards4--------------------- */
+
+body {
+    margin: 0;
+    font-family: "Opens-Sans", Opens-Sans;
+    background-color: #f5f5f5;
+
+}
+
+.container {
+    padding: 0px;
+    text-align: center;
+
+}
+
+.title3 {
+    text-align: center;
+    color: var(--EnviarBotao);
+    font-size: 3em;
+    padding: 10px 20px;
+
+}
+
+.cards4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+
+}
+
+.card4 img {
+    border-radius: 50px;
+    width: 100%;
+    height: 500px;
+    padding: 10px 20px;
+}
+
+.card4-content {
+    padding: 15px;
+
 }
 
 /* ---------- Reponsividade ---------------- */
@@ -251,6 +392,16 @@ body {
     #menu_botao {
         display: block;
         z-index: 1;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .container-gridR {
+        flex-direction: column;
+
     }
 
 
@@ -297,4 +448,227 @@ body {
     }
 
 
+}
+
+/* ---------- Contato ----------- */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+#contato .titulo {
+
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+
+    margin-left: 5px;
+}
+
+#contato form {
+
+    max-width: 980px;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: solid 3px var(--EnviarBotao);
+
+    border-radius: 40px;
+    background-color: var(--Contato);
+
+    color: var(--Preto);
+    font-family: "Opens-Sans", Opens-Sans;
+    font-size: 17px;
+}
+
+.campo {
+
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+
+    height: 40px;
+
+    color: var(--Preto);
+    background-color: var(--Branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea {
+
+    color: var(--Preto);
+    background-color: var(--Branco);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px
+}
+
+.campo input,
+.campo-descricao textarea {
+
+    font-family: "Opens-Sans", Opens-Sans;
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: var(--VermelhoEscuro);
+
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+
+    outline: 2px solid var(--EnviarBotao);
+}
+
+#contato form button {
+
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--VermelhoEscuro);
+
+    color: var(--Branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Opens-Sans", Opens-Sans;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+
+    background-color: #ff0000;
+
+}
+
+/* ---------------------Footer----------------- */
+
+footer {
+    height: 350px;
+    background-image: url(./svg/Rectangle\ 64\ \(1\).svg);
+
+}
+
+footer img {
+
+    height: 200px;
+
+}
+
+
+footer .container-gridR {
+
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+    align-items: center;
+
+}
+
+.Direito-Autoral p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Opens-Sans" Opens-Sans;
+}
+
+
+.redes-sociais {
+
+    height: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+
+    color: var(--Branco);
+
+    font-family: "Opens", Opens-Sans;
+    font-size: 24px;
+
+}
+
+.icones-redes {
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a {
+
+    color: var(--Branco);
+    width: 70px;
+
+}
+
+.icones-redes a:hover {
+
+    color: #ff0000  ;
+}
+
+.Direitos {
+    background-color: #640000;
+    font-size: 22px;
+    color: var(--Branco);
+    text-align: center
+    
 }
