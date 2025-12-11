@@ -9,7 +9,7 @@ function abreFechaMenu(){
     //Se o menu está fechado
     if(window.getComputedStyle(menu).right == "-210px"){
         //Abrir o menu
-        menu.style.right = "80px"
+        menu.style.right = "100px"
 
         //Mostrar icone X
         iconeX.style.display = "inline"
@@ -17,7 +17,7 @@ function abreFechaMenu(){
         //Esconde icone barras
         iconeBarras.style.display = "none"
 
-        sombra.style.right = "5.5px"
+        sombra.style.right = "40px"
 
     }else{
         //Fechar o menu
@@ -42,18 +42,3 @@ onresize = () =>{
         iconeBarras.style.display = "inline"
     }
 }
-
-
-// ----------------------Login-----------------------
-
-const container = document.querySelector('.container5')
-const registerBtn = document.querySelector('.register-btn')
-const loginBtn = document.querySelector('.login-btn')
-
-registerBtn.addEventListener('click', () => {
-    container5.classList.add('active');
-});
-
-loginBtn.addEventListener('click', () => {
-    container5.classList.remove('active');
-})
