@@ -44,3 +44,16 @@ onresize = () =>{
 }
 
 
+// ----------------------Login-----------------------
+
+const container = document.querySelector('.container5')
+const registerBtn = document.querySelector('.register-btn')
+const loginBtn = document.querySelector('.login-btn')
+
+registerBtn.addEventListener('click', () => {
+    container5.classList.add('active');
+});
+
+loginBtn.addEventListener('click', () => {
+    container5.classList.remove('active');
+})

@@ -235,8 +235,7 @@ body {
 
 .card2:hover {
     transform: scale(1.2);
-    transition: .5s;
-
+    transition: .5s ease-in-out
 }
 
 .card2 img {
@@ -261,7 +260,7 @@ body {
 }
 
 .title2 {
-    color: #640000;
+    color: var(--EnviarBotao);
     text-align: center;
     margin-bottom: 70px;
     font-size: 3em;
@@ -358,6 +357,11 @@ body {
     gap: 20px;
     margin-top: 70px;
 
+}
+
+.card4:hover {
+    transform: scale(1.2);
+    transition: .5s ease-in-out
 }
 
 .card4 img {
@@ -589,7 +593,7 @@ body {
 
 #contato form button:hover {
 
-    background-color: #ff0000;
+    background-color: var(--Cinza);
 
 }
 
@@ -662,7 +666,7 @@ footer .container-gridR {
 
 .icones-redes a:hover {
 
-    color: #ff0000  ;
+    color: var(--Cinza);
 }
 
 .Direitos {
@@ -670,5 +674,121 @@ footer .container-gridR {
     font-size: 22px;
     color: var(--Branco);
     text-align: center
-    
+}
+
+
+/* -----------------------Login---------------------- */
+
+
+:root {
+    --btn-bg: #6d6d6d;
+    /* cor principal */
+    --btn-color: #ffffff;
+    /* texto */
+    --btn-radius: 10px;
+    --btn-padding: 12px 18px;
+    --btn-shadow: 0 6px 18px rgba(11, 132, 255, 0.18);
+    --btn-transition: 180ms cubic-bezier(.2, .9, .2, 1);
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    cursor: pointer;
+    font: 600 16px/1 "Inter", "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    transition: transform var(--btn-transition), box-shadow var(--btn-transition), background-color var(--btn-transition), opacity var(--btn-transition);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.btn-login {
+    background: linear-gradient(180deg, var(--btn-bg), color-mix(in srgb, var(--btn-bg) 85%, black 10%));
+    color: var(--btn-color);
+    box-shadow: var(--btn-shadow);
+    padding: 12px 20px;
+}
+
+
+.btn-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    color: inherit;
+
+    opacity: 0.98;
+    transition: transform var(--btn-transition);
+}
+
+.btn-login:hover,
+.btn-login:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(11, 132, 255, 0.22);
+    outline: none;
+}
+
+.btn-login:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+.btn-login:focus-visible {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--btn-bg) 15%, transparent), var(--btn-shadow);
+    border-radius: calc(var(--btn-radius) + 2px);
+}
+
+
+.btn-outline {
+    background: transparent;
+    color: var(--btn-bg);
+    border: 1.5px solid var(--btn-bg);
+    box-shadow: none;
+}
+
+
+.btn-full {
+    width: 100%;
+    justify-content: center;
+}
+
+
+.btn.sm {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.btn.lg {
+    font-size: 18px;
+    padding: 14px 22px;
+    border-radius: 12px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+        transform: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 15px;
+        padding: 12px 14px;
+        gap: 8px;
+    }
+
+    .btn-icon {
+        width: 16px;
+        height: 16px;
+    }
 }
